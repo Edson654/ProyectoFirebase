@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center">Iniciar Sesion</h1>
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                    <div class="form-group">
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" class="form-control" formControlName="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" formControlName="password">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar Sesion</button>
+                </form>
+                <div class="form-group mt-3">
+                    <p>Crear una cuenata <a [routerLink]="['register']"> Registrate </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
